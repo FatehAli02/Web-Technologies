@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="main" class="resume">
+      <header>
+        <h1>Fateh Ali</h1>
+        <p>CS Undergraduate</p>
+        <div>
+          <ul id="creds">
+            <li>
+              <a href="mailto:fatehaliyasin@gmail.com" class="creds-links"
+                >fatehaliyasin@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/fateh-ali-072348352"
+                class="creds-links"
+                >Linkedln</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/FatehAli02" class="creds-links"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          CS undergraduate and full-stack builder who moves quickly from theory
+          to production: from a low-level C operating system simulation to a
+          deployed, containerized Retrieval-Augmented Generation (RAG)
+          application spanning FastAPI, PostgreSQL/pgvector, and React.
+          Comfortable across the stack, backend APIs, relational database
+          design, ML feature engineering, and modern frontend engineering – with
+          a relentless, hands-on debugging mindset. Seeking a software
+          engineering, backend, AI automation, or web development internship.
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <h4>BS Computer Science</h4>
+        <p>COMSATS University Islamabad (Lahore Campus)</p>
+        <p>09/2024 – Present</p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <p>
+          <strong>Languages & Concepts: </strong>Python, JavaScript, C++, SQL,
+          Java, Object-Oriented Programming (OOP), Relational Database Design,
+          RESTful APIs, ETL Pipelines, Web Scraping, Feature Engineering
+        </p>
+        <p>
+          <strong>Frameworks & Tools: </strong>FastAPI, React, Vite, Tailwind
+          CSS, Docker, PostgreSQL, pgvector, SQLAlchemy 2.0, Alembic, JWT
+          Authentica tion, Git/GitHub, Typer, CustomTkinter, BeautifulSoup4,
+          Loguru, SSMS, Microsoft Office
+        </p>
+      </section>
+
+      <section>
+        <h2>Certificates</h2>
+        <ul>
+          <li>
+            <b>Python for Everybody Specialization</b> - University of Michigan
+            (Coursera)
+          </li>
+          <li><b>Python Crash Course</b> - Google (Coursera)</li>
+          <li>
+            <b>Technical Volunteer, ACM Student Chapter</b> - Organized and
+            facilitated technical events and academic workshops
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <article class="project">
+          <h3>RepoMind– Full-Stack RAG Application</h3>
+          <p class="technologies"><i>Python, FastAPI, React</i></p>
+          <ul>
+            <li>
+              Engineered and deployed a production-ready Retrieval-Augmented
+              Generation (RAG) application from scratch, containerizing a
+              FastAPI backend with a PostgreSQL + pgvector database using
+              Docker, and managing schema evolution via SQLAlchemy 2.0 ORM and
+              Alembic migrations.
+            </li>
+            <li>
+              Built a custom document ingestion pipeline that chunks text with
+              overlapping boundaries, and integrated the Google Gemini
+              Embeddings API to perform cosine-similarity search and generate
+              hallucination-free answers via Groq’s llama-3.1-8b-instant model.
+            </li>
+            <li>
+              Built a responsive React + Vite + Tailwind CSS frontend with
+              JWT-based session persistence and a Markdown-rendered chat
+              interface; deployed live on Vercel (frontend) and Railway
+              (backend).
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>Tech Pulse Data Pipeline</h3>
+          <p class="technologies"><i>Python, BeautifulSoup, Typer</i></p>
+          <ul>
+            <li>
+              Engineered an automated pipeline utilizing requests and
+              BeautifulSoup4 to extract, filter, and score unstructured web data
+              based on weighted keyword density.
+            </li>
+            <li>
+              Architected a modular CLI with Typer and Loguru to orchestrate
+              data transformation, secure CSV storage, and automated HTML email
+              dispatch via SMTP.
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>AutoFile Pro</h3>
+          <p class="technologies"><i>Python, CustomTkinter</i></p>
+          <ul>
+            <li>
+              Built a desktop file-management application with a modern
+              dark-mode GUI, featuring intelligent file organization by
+              extension, size, or modification age.
+            </li>
+            <li>
+              Implemented threaded backup execution with optional zip
+              compression to keep the UI responsive during large file
+              operations, and a configurable cleanup tool with safe
+              delete-to-recycle-bin/archive handling.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
