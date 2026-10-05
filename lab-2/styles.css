@@ -1,0 +1,20 @@
+.custom-brand {
+  font-family: "Georgia", serif;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.btn-primary {
+  background-color: darkslategrey;
+  border-color: darkslategray;
+}
+.btn-primary:hover {
+  background-color: darkgrey;
+  border-color: darkslategray;
+}
