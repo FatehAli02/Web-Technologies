@@ -9,29 +9,38 @@
 
   <body>
     <div id="main" class="resume">
-      <header>
-        <h1>Fateh Ali</h1>
-        <p>CS Undergraduate</p>
-        <div>
-          <ul id="creds">
-            <li>
-              <a href="mailto:fatehaliyasin@gmail.com" class="creds-links"
-                >fatehaliyasin@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/fateh-ali-072348352"
-                class="creds-links"
-                >Linkedln</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/FatehAli02" class="creds-links"
-                >GitHub</a
-              >
-            </li>
-          </ul>
+      <header class="header">
+        <div class="header-content">
+          <h1>Fateh Ali</h1>
+          <p>CS Undergraduate</p>
+          <div class="urls">
+            <ul id="creds">
+              <li>
+                <a href="mailto:fatehaliyasin@gmail.com" class="creds links"
+                  >fatehaliyasin@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/fateh-ali-072348352"
+                  class="creds-links"
+                  target="_blank"
+                  >Linkedln</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/FatehAli02"
+                  class="creds-links"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="img">
+            <img src="image.jpeg" class="Profile_Pic" />
+          </div>
         </div>
       </header>
 
@@ -93,7 +102,7 @@
           <p class="technologies"><i>Python, FastAPI, React</i></p>
           <ul>
             <li>
-              Engineered and deployed a production-ready Retrieval-Augmented
+              Engineered and deployed a production-ready Retrieval Augmented
               Generation (RAG) application from scratch, containerizing a
               FastAPI backend with a PostgreSQL + pgvector database using
               Docker, and managing schema evolution via SQLAlchemy 2.0 ORM and
