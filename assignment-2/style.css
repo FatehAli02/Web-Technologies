@@ -3,7 +3,7 @@
   font-size: 32px;
   font-weight: 900;
   letter-spacing: -1.5px;
-  color: #111;
+  color: white;
   line-height: 1;
 }
 @media (max-width: 767.98px) {
@@ -34,14 +34,34 @@
 
 .custom-navbar {
   background-color: transparent;
-  transition: background-color 0.3s ease;
   z-index: 1000;
   margin-bottom: -80px;
 }
-.custom-navbar:hover {
+
+.custom-navbar .nav-link,
+.custom-navbar .custom-brand {
+  color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+.custom-navbar:hover,
+.custom-navbar.scrolled {
   background-color: white;
 }
 
-.custom-navbar.scrolled {
-  background-color: white;
+.custom-navbar:hover .nav-link,
+.custom-navbar.scrolled .nav-link,
+.custom-navbar:hover .custom-brand,
+.custom-navbar.scrolled .custom-brand {
+  color: #111 !important;
+}
+.banner {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1920&auto=format&fit=crop")
+      center/cover no-repeat;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 3px;
 }
