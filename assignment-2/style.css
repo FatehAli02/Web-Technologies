@@ -65,8 +65,7 @@
 }
 .banner {
   height: 100vh;
-  background: url("https://engine.com.pk/cdn/shop/files/Web_Banner.png?v=1792157160&width=2000")
-    center/cover no-repeat;
+  background: url("images/Web_Banner.webp") center/cover no-repeat;
 }
 
 .letter-spacing-wide {
