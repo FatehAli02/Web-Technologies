@@ -91,3 +91,78 @@
   width: 45%;
   padding-right: 2rem;
 }
+
+.product-gallery-img {
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-title {
+  font-weight: 300;
+  color: #111;
+}
+
+.product-price {
+  font-weight: 500;
+  color: #111;
+}
+
+.baadmay-badge {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.size-box {
+  width: 44px;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-box.active,
+.size-box:hover {
+  background-color: #222222;
+  color: #ffffff;
+  border-color: #222222;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 120px;
+}
+
+.qty-box button {
+  border: none;
+  background: transparent;
+  width: 35px;
+  height: 38px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.qty-box input {
+  border: none;
+  width: 50px;
+  text-align: center;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+details summary {
+  cursor: pointer;
+  outline: none;
+}
