@@ -43,7 +43,9 @@
   transition: background-color 0.3s ease;
 }
 .custom-navbar:hover,
-.custom-navbar.scrolled {
+.custom-navbar.scrolled,
+.custom-navbar:has(.show),
+.custom-navbar:has(.collapsing) {
   background-color: white;
 }
 
@@ -53,14 +55,22 @@
 }
 
 .custom-navbar:hover .navbar-toggler-icon,
-.custom-navbar.scrolled .navbar-toggler-icon {
+.custom-navbar.scrolled .navbar-toggler-icon,
+.custom-navbar:has(.show) .navbar-toggler-icon,
+.custom-navbar:has(.collapsing) .navbar-toggler-icon {
   filter: none;
 }
 
 .custom-navbar:hover .menu-label,
 .custom-navbar.scrolled .menu-label,
+.custom-navbar:has(.show) .menu-label,
+.custom-navbar:has(.collapsing) .menu-label,
 .custom-navbar:hover .custom-brand,
-.custom-navbar.scrolled .custom-brand {
+.custom-navbar.scrolled .custom-brand,
+.custom-navbar:has(.show) .custom-brand,
+.custom-navbar:has(.collapsing) .custom-brand,
+.custom-navbar:has(.show) .nav-link,
+.custom-navbar:has(.collapsing) .nav-link {
   color: #111 !important;
 }
 .banner {
@@ -249,4 +259,12 @@ details summary {
 .social-icons a:hover {
   background-color: #111111;
   color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-section {
+  scroll-margin-top: 100px;
 }
