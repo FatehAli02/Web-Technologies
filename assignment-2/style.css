@@ -281,3 +281,31 @@ html {
 .product-section {
   scroll-margin-top: 100px;
 }
+
+.product-section .card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.product-section .card a {
+  color: #111111 !important;
+  text-decoration: none !important;
+}
+
+.product-section .card a:hover {
+  color: #111111 !important;
+  text-decoration: none !important;
+}
+
+.card-title {
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
