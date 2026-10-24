@@ -1,7 +1,7 @@
 .custom-brand {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: -1.5px;
   line-height: 1;
 }
@@ -9,12 +9,6 @@
   .custom-brand {
     font-size: 24px;
   }
-}
-
-.custom-navbar .container-fluid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-section {
@@ -25,10 +19,6 @@
 
 .center-section {
   justify-content: center;
-}
-
-.right-section {
-  justify-content: flex-end;
 }
 
 .custom-navbar {
@@ -78,10 +68,6 @@
   background: url("images/Web_Banner.webp") center/cover no-repeat;
 }
 
-.letter-spacing-wide {
-  letter-spacing: 2px;
-}
-
 .section-heading {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -90,7 +76,6 @@
 }
 
 .navbar-toggler .menu-label {
-  color: white;
   font-size: 15px;
   letter-spacing: 0.5px;
 }
@@ -100,7 +85,6 @@
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  color: #111;
   transition: color ease 0.2s;
 }
 
@@ -108,11 +92,18 @@
   color: #666 !important;
 }
 .navbar-nav {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 40%;
-  padding-right: 2rem;
+  width: 100%;
+}
+.custom-navbar .nav-link {
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 40%;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
 }
 
 .product-gallery-img {
@@ -164,13 +155,13 @@
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
-  width: 120px;
+  width: 140px;
 }
 
 .qty-box button {
   border: none;
   background: transparent;
-  width: 35px;
+  width: 44px;
   height: 38px;
   font-size: 1.1rem;
   color: #666;
@@ -183,11 +174,6 @@
   background: transparent;
   outline: none;
   font-size: 0.9rem;
-}
-
-details summary {
-  cursor: pointer;
-  outline: none;
 }
 
 .engine-footer {
@@ -242,7 +228,6 @@ details summary {
 .newsletter-form button {
   border: none;
   background: transparent;
-  cursor: pointer;
   font-size: 1.1rem;
   color: #111111;
 }
@@ -272,10 +257,6 @@ details summary {
 .social-icons a:hover {
   background-color: #111111;
   color: #ffffff;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .product-section {
@@ -308,4 +289,9 @@ html {
   color: #111111;
   font-weight: 500;
   margin-bottom: 4px;
+}
+
+.card-img-top {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
