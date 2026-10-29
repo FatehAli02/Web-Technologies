@@ -100,7 +100,31 @@
             class="nav-section d-flex align-items-center gap-3 justify-content-end"
           >
             <a href="#" class="text-decoration-none fs-5">🔍</a>
-            <a href="checkout.html" class="text-decoration-none fs-5">🛒</a>
+            <div class="cart-wrap">
+              <a
+                href="checkout.html"
+                id="cart-btn"
+                class="text-decoration-none fs-5 position-relative"
+                >🛒
+                <span
+                  id="cart-badge"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-badge"
+                  >0</span
+                >
+              </a>
+              <div id="mini-cart" class="mini-cart" hidden>
+                <h6 class="mb-2">Your Cart</h6>
+                <ul id="cart-items" class="list-unstyled mb-2"></ul>
+                <p class="mb-2 fw-semibold">
+                  Total: PKR <span id="cart-total">0</span>
+                </p>
+                <a
+                  href="checkout.html"
+                  class="btn btn-dark btn-sm rounded-0 w-100"
+                  >Go to checkout</a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
@@ -674,5 +698,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
