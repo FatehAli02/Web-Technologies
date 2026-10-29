@@ -430,3 +430,68 @@
     color: var(--accent);
   }
 }
+
+/* ===== TASK 2: checkout ===== */
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.checkout-form fieldset {
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  margin: 0;
+  min-width: 0;
+}
+.checkout-form legend {
+  float: none;
+  width: auto;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+.field label {
+  font-size: 0.9rem;
+}
+.field input,
+.field select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 0.5rem;
+}
+
+.field .msg {
+  display: none;
+  color: #d00;
+  font-size: 0.8rem;
+}
+.field input:user-invalid,
+.field select:user-invalid {
+  border-color: #d00;
+}
+.field input:user-invalid ~ .msg,
+.field select:user-invalid ~ .msg {
+  display: block;
+}
+
+@media (min-width: 632px) {
+  .checkout-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .field {
+    grid-template-columns: 7rem 1fr;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .field .msg {
+    grid-column: 2;
+  }
+}
